@@ -7,7 +7,7 @@ class CustomOrderDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 120,
+      // height: 120,
       width: double.infinity,
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(20)),

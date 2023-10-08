@@ -9,7 +9,7 @@ class    CustomTile extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 50,
+          // height: 50,
           width: double.infinity,
           child: Row(
             children: [

@@ -29,12 +29,12 @@ class OrderDetail extends StatelessWidget {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(19.0),
-        child: SingleChildScrollView(
-          child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Row(
+      body: SingleChildScrollView(
+        child:
+            Padding(
+              padding: const EdgeInsets.all(19.0),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      Row(
               children: [
                 Text(
                   "Order  N21947034",
@@ -49,11 +49,11 @@ class OrderDetail extends StatelessWidget {
                       color: Colors.grey[300]),
                 ),
               ],
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 12,
-            ),
-            Row(
+                      ),
+                      Row(
               children: [
                 Text(
                   "Tracking Number:  ",
@@ -65,93 +65,93 @@ class OrderDetail extends StatelessWidget {
                   style: TextStyle(color: Colors.green),
                 )
               ],
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 12,
-            ),
-            Text(
+                      ),
+                      Text(
               "3 items",
               style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 19,
-            ),
-            CustomOrderDetail(
+                      ),
+                      CustomOrderDetail(
                 image:
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8I3iR1ZPiYTI2KKyNBKTX4UyNoqbf7TV5ig&usqp=CAU"),
-            SizedBox(
+                      SizedBox(
               height: 19,
-            ),
-            CustomOrderDetail(
+                      ),
+                      CustomOrderDetail(
                 image:
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqoP1AW1NQSEQomVeVUsvShMwDntlGQj6ZKdhhoFM0q4DFlG2s4Qyy7rpK1h0EuwGdIhA&usqp=CAU"),
-            SizedBox(
+                      SizedBox(
               height: 19,
-            ),
-            CustomOrderDetail(
+                      ),
+                      CustomOrderDetail(
                 image:
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpKgtiD_oJIfSBPg2bbwxWKeyiJDVTkdnlHdi7YNGV8enSpaqTEp0jnscxoFbitS7Wjyw&usqp=CAU"),
-            SizedBox(
+                      SizedBox(
               height: 19,
-            ),
-            Text(
+                      ),
+                      Text(
               "Order Information",
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 19,
-            ),
-         OrderInformationWidget(
+                      ),
+                   OrderInformationWidget(
               text: "Shoping Adress",
-              width: 20,
+              width: 20.0,
               text1:
-                  "Three newbridge Court, Chino \nHills, CA 91709, United state",
-            ),
-            SizedBox(
+                  "Three newbridge Court,Chino\nHills, CA 91709, United state",
+                      ),
+                      SizedBox(
               height: 16,
-            ),
-            OrderInformationWidget(
+                      ),
+                      OrderInformationWidget(
               text: "Payment Method",
-              width: 18,
+              width: 18.0,
               // image:NetworkImage("https://www.pngwing.com/en/search?q=visa+Mastercard"),
               text1: "**** **** ****3947",
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 16,
-            ),
-            Row(
+                      ),
+                      Row(
               children: [
-             OrderInformationWidget(
+                       OrderInformationWidget(
                   text: "Delivery Method",
-                  width: 20,
+                  width: 20.0,
                   text1: "FedEx, 3 days, 15\$",
                 ),
               ],
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 16,
-            ),
+                      ),
                  OrderInformationWidget(
               text: "Discount",
-              width: 62,
+              width: 62.0,
               text1: "10%, Presonal Promo Code",
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 16,
-            ),
-            Row(
+                      ),
+                      Row(
               children: [
                OrderInformationWidget(
                   text: "Total Amount",
-                  width: 35,
+                  width: 35.0,
                   text1: "133\$",
                 ),
               ],
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 19,
-            ),
-            Row(
+                      ),
+                      Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                   CustomOrderContainar(
@@ -166,11 +166,11 @@ class OrderDetail extends StatelessWidget {
                   Colors: Colors.white,
                 ),
               ],
-            ),
-            SizedBox(
+                      ),
+                      SizedBox(
               height: 80,
-            ),
-            Container(
+                      ),
+                      Container(
               height: 50,
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -219,9 +219,9 @@ class OrderDetail extends StatelessWidget {
                   ),
                 ],
               ),
+                      ),
+                    ]),
             ),
-          ]),
-        ),
       ),
     );
   }

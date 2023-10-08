@@ -25,9 +25,9 @@ class _FavoriteScreen3State extends State<FavoriteScreen3> {
                 child: Icon(Icons.search),
               )
             ]),
-        body: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: SingleChildScrollView(
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -186,7 +186,7 @@ class _FavoriteScreen3State extends State<FavoriteScreen3> {
                      height: 120,
             width: 100,
             decoration: BoxDecoration(color: Colors.grey.withOpacity(0.60),borderRadius: BorderRadius.circular(12)),
-           
+                   
                   ),
                   Positioned(
                       right: -1,

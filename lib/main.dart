@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/splash_screen.dart';
 import 'package:flutter_application_1/view/counter.dart';
 import 'package:flutter_application_1/view/demo.dart';
 import 'package:flutter_application_1/view/favorite_screen.dart';
@@ -27,6 +28,7 @@ class myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: "YoungSerif-Regular"),
       debugShowCheckedModeBanner: false,
 
       // home:Counter(),
@@ -35,19 +37,19 @@ class myapp extends StatelessWidget {
       // home:FavoriteScreen(),
       // home:HomeScreen(),
       //  home: HomeScreen(),
-
-           home: SignUpScreen(),
-        //  home:LoginScreen(),
+             home:SplashScreen(),
+            // home: SignUpScreen(),
+       //  home:LoginScreen(),
       //  home:ForgetScreen(),
       //  home:MyProfileScreen(),
       //  home:MyOrderScreen(),
-          // home:SettingScreen(),
-        // home:OrderDetail(),
-    //  home: ShortDressScreen(),
+      // home:SettingScreen(),
+      // home:OrderDetail(),
+      //  home: ShortDressScreen(),
       //  home:RatingReview(),
-        // home: ReviewScreen(),
-        // home: FavoriteScreen3(),
-        //  home:FavoriteScreen4(),
+      // home: ReviewScreen(),
+      // home: FavoriteScreen3(),
+      //  home:FavoriteScreen4(),
     );
   }
 }

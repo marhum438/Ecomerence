@@ -8,18 +8,19 @@ class ForgetScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(leading: InkWell(onTap:(){
+               Navigator.pop(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
+            
+            },child: Icon(Icons.arrow_back_ios)),
+           backgroundColor: Colors.white,foregroundColor: Colors.black, ),
       body: Padding(
         padding: const EdgeInsets.all(14.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            InkWell(onTap:(){
-               Navigator.pop(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
-            
-            },child: Icon(Icons.arrow_back_ios)),
-            SizedBox(
-              height: 22,
-            ),
+            // SizedBox(
+            //   height: 22,
+            // ),
             Text(
               "Forget PassWord ",
               style: TextStyle(

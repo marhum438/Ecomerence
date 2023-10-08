@@ -16,7 +16,7 @@ class   CustomOrderContainar extends StatelessWidget {
       child: Center(
           child: Text(
         text,
-        style: TextStyle(color: Colors),
+        style: TextStyle(color: Colors,fontSize: 12),
       )),
     );
   }
